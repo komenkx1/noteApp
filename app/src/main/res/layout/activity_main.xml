@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary_dark"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/header_linear"
+        android:layout_width="381dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal|start"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_new"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="120dp"
+            android:background="@drawable/button_rounded"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:text="@string/file_new" />
+
+        <Button
+            android:id="@+id/button_open"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="120dp"
+            android:background="@drawable/button_rounded"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/tiny_margin"
+            android:layout_marginLeft="@dimen/tiny_margin"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:elevation="2dp"
+            android:text="@string/file_open" />
+
+        <Button
+            android:id="@+id/button_save"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="120dp"
+            android:background="@drawable/button_rounded"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/tiny_margin"
+            android:elevation="2dp"
+            android:layout_marginLeft="@dimen/tiny_margin"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:text="@string/file_save" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/header_linear2"
+        android:layout_width="381dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal|start"
+        android:minHeight="200dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/header_linear">
+
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_above="@+id/edit_file"
+            android:layout_marginBottom="13dp"
+            android:layout_weight="1"
+            android:background="@drawable/form_input_rounded"
+            android:ems="10"
+            android:hint="@string/title"
+            android:elevation="2dp"
+            android:inputType="textPersonName|textNoSuggestions"
+            android:padding="@dimen/tiny_margin" />
+        <EditText
+            android:id="@+id/edit_file"
+            style="@style/Widget.AppCompat.EditText"
+            android:elevation="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="485dp"
+            android:background="@drawable/form_input_rounded"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:gravity="top|start"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:padding="@dimen/tiny_margin"
+            android:shadowRadius="20" />
+    </LinearLayout>
+</RelativeLayout>
